@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Demo</title>
+    <style>
+      /* Modile default small size*/
+      body {
+        background-color: aqua;
+        color: blue;
+      }
+      h1 {
+        font-size: 10vw;
+      }
+      h2 {
+        font-size: 5vw;
+      }
+      p {
+        font-size: 5vw;
+      }
+      main {
+        padding: 20px;
+      }
+
+      /*For larger size screen tablets and above 768px */
+      /* @media (min-width: 768px) {
+        main {
+          padding: 5px;
+        }
+        h1,
+        p {
+          background-color: chartreuse;
+        }
+      } */
+      /* for larger size screen desktop and above 1024px*/
+      @media (min-width: 1024px) {
+        main {
+          padding: 10px;
+        }
+        h1,
+        p {
+          background-color: coral;
+        }
+      }
+      /* for screen size 992px or lesser 992px*/
+      @media screen and (max-width: 992px) {
+        body {
+          background-color: yellow;
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive web page</h1>
+    </header>
+    <main>
+      <section>
+        <h2>
+          This is responsive webpage that adjusts bsed on device's viewport size
+        </h2>
+      </section>
+    </main>
+    <footer>
+      <p>Footer Content</p>
+    </footer>
+  </body>
+</html>
